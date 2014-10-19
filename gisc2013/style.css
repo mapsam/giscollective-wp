@@ -1,0 +1,376 @@
+/*
+Theme Name: GISC 2013
+Description: Custom theme for the GISCollective. Credits to TidyThemes for providing the raw PHP files.
+Author: Sam Matthews
+Author URI: http://www.mapsam.com;
+Version: 1.0
+Tags: black, blue, white, light, one-column, flexible-width, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block; margin:0; padding:0;}.clear{clear:both}.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}
+
+body {
+	background-color:#e5e5e5;
+	color:#000;
+}
+
+/* GLOBAL STYLES */
+#wrapper {
+	width:900px;
+	margin:0 auto;
+}
+a {
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+pre {
+	margin:15px 0 15px 5px;
+	padding-left:20px;
+	font-family: 'Droid Sans Mono', sans-serif;
+	font-size:1.0em;
+	line-height:1.2em;
+	border-left:#71C6D9 4px solid;
+}
+code {
+	font-family: 'Droid Sans Mono', sans-serif;
+	color:#555;
+}
+strong {
+	font-weight:900;
+	color:#000;
+}
+em {
+	font-style:italic;
+	font-weight:100;
+}
+
+/* NAV STYLES */
+header {
+	position:fixed;
+	top:0;
+	width:100%;
+	background-color:rgba(248,248,248,0.9);
+	margin:0;
+	padding:3px 0 6px 0;
+	border-bottom:solid #c0c0c0 thin;
+}
+#branding {
+	float:left;
+	width:50%;
+}
+#site-title a {
+	font-family: 'Roboto Slab', serif;
+	font-weight:900;
+	font-size:2.9em;
+	color:#A6242F;
+}
+#site-title a:hover {
+	text-decoration:none;
+}
+nav {
+	float:right;
+}
+nav ul {
+	margin:17px 0 0 0;
+	list-style-type: none;
+}
+nav ul li {
+	display:inline;
+	margin:0 20px 0 0;
+}
+nav ul li a {
+	font-family: 'Roboto', serif;
+	font-weight:700;
+	font-size:0.725em;
+	text-transform:uppercase;
+	letter-spacing:0.15em;
+	color:#0367A6;
+}
+nav ul li a:hover {
+	color:#023B5E;
+}
+
+/* EVERYTHING BELOW THE HEADER */
+#content {
+	float:left;
+	margin:0;
+	width:75%;
+}
+#container {
+	display:block;
+	margin:70px auto;
+}
+
+/* Posts */
+.post {
+	margin:0 0 50px 0;
+}
+.post a {
+	color:#3556B5;
+}
+.entry-title a {
+	font-family: 'Roboto', sans-serif;
+	font-size:2.3em;
+	font-weight:900;
+	margin:0 0 10px 0;
+	color:#000;
+}
+.entry-meta {
+	font-family: 'Roboto', serif;
+	color:#000;
+	margin:5px 0 10px 0;
+	font-size:0.9em;
+}
+.entry-content p, .entry-summary p {
+	font-family: 'Roboto Slab', serif;
+	font-size:1.0em;
+	line-height:1.4em;
+	margin:0 0 17px 0;
+	color:#333;
+}
+.entry-content ul {
+	list-style-type: disc;
+	margin:0 0 15px 40px;
+}
+.entry-content ul li ul {
+	list-style-type: circle;
+	margin:0 0 10px 20px;
+}
+.entry-content ul li, .entry-content ul li ul li {
+	font-family: 'Roboto Slab', serif;
+	font-size:1.0em;
+	line-height:1.4em;
+	margin:0 0 4px 0;
+	color:#333;
+}
+.entry-content ul li a, .entry-content ul li ul li a {
+	color:#3556B5;
+}
+.entry-content ol {
+	list-style-type: decimal;
+	margin:0 0 15px 40px;
+}
+.entry-content ol li ol {
+	margin:0 0 10px 20px;
+}
+.entry-content ol li, .entry-content ol li ol li {
+	font-family: 'Roboto Slab', serif;
+	font-size:1.0em;
+	line-height:1.4em;
+	margin:0 0 4px 0;
+	color:#333;
+}
+.entry-content ol li a, .entry-content ol li ol li a {
+	color:#3556B5;
+}
+.entry-content h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size:1.5em;
+	font-weight:900;
+	margin:30px 0 10px 0;
+	color:#A6242F;
+}
+.entry-content h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size:1.2em;
+	font-weight:900;
+	margin:0 0 10px 0;
+	color:#555;
+}
+.entry-content img {
+	display:block;
+	margin:10px auto;
+	max-width:100%;
+	width:auto;
+	height:auto;
+}
+.entry-content blockquote {
+	font-family: 'Roboto Slab', serif;
+	font-size:1.0em;
+	line-height:1.4em;
+	margin:0 0 17px 20px;
+	padding-left:10px;
+	color:#222;
+	border-left:4px #F2BC57 solid;
+}
+.entry-footer {
+	font-family: 'Roboto', serif;
+	color:#888;
+	margin:5px 0 10px 0;
+	font-size:0.9em;
+	border-top:thin #c0c0c0 solid;
+	padding-top:4px;
+}
+.entry-footer a {
+	color:#A6242F;
+}
+
+/* Comments */
+#comments-list h3 {
+	font-family: 'Roboto', serif;
+	color:#000;
+	font-weight:600;
+	margin:5px 0 10px 0;
+	font-size:0.9em;
+}
+.comment-author {
+	font-family: 'Roboto', serif;
+	color:#000;
+	margin:5px 0 10px 0;
+	font-size:0.9em;
+	font-weight:600;
+}
+.vcard {}
+.comment-meta {
+	font-family: 'Roboto', serif;
+	color:#000;
+	margin:5px 0 10px 0;
+	font-size:0.8em;
+}
+.comment-content p {
+	font-family: 'Roboto Slab', serif;
+	font-size:0.8em;
+	line-height:1.4em;
+	margin:0 0 17px 0;
+	color:#333;
+}
+.children {
+	margin:0 0 0 30px;
+}
+#reply-title {
+	font-family: 'Roboto', serif;
+}
+#commentform p {
+	font-family: 'Roboto Slab', serif;
+	font-size:0.825em;
+	line-height:1.4em;
+	margin:0 0 17px 0;
+	color:#333;
+}
+#commentform textarea {
+	margin:auto;
+}
+.comment-form-comment label {
+	display:none;
+}
+.comment-form-comment textarea {
+	background-color:#F5F5F5;
+}
+.form-allowed-tags {
+	display:none;
+}
+
+/* Sidebar Style */
+#sidebar {
+	float:right;
+	margin:0;
+	width:23%;
+	text-align:left;
+}
+#site-description {
+	font-family: 'Roboto Slab', serif;
+	font-size:1.0em;
+	line-height:1.4em;
+	margin:0 0 17px 0;
+	color:#333;
+}
+.sid {}
+.sid li ul li {
+}
+.widget-container {
+	margin:0 0 40px 0;
+	font-family: 'Roboto', serif;
+}
+.widget-categories {}
+.widget-title {
+	margin:0 0 5px 0;
+	font-weight:700;
+}
+.cat-item a {
+	font-weight:600;
+	font-size:0.75em;
+	color:#A6242F;
+}
+.widget-container ul li {
+	margin:0 0 2px 0;
+}
+.widget-container ul li a {
+	font-weight:600;
+	font-size:0.8em;
+	color:#A6242F;
+	opacity:0.7;
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-o-transition:.5s;
+	transition:.5s;
+}
+.widget-container ul li a:hover {
+	text-decoration:none;
+	opacity:1.0;
+}
+#recent-posts {
+	border-bottom:thin #c0c0c0 solid;
+}
+
+/* Pages */
+.page h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size:2.3em;
+	font-weight:900;
+	margin:0 0 10px 0;
+	color:#000;
+}
+.page a, .vcard a {
+	color:#3556B5;
+}
+.page-title {
+	font-family: 'Roboto', serif;
+	color:#888;
+	margin:5px 0 10px 0;
+	font-size:1wem;
+}
+.page-title span {
+	color:#333;
+}
+.edit-link a {
+	color:#A6242F;
+}
+.edit-link {
+	font-family: 'Roboto', serif;
+	color:#888;
+	margin:5px 0 10px 0;
+	font-size:0.9em;
+	border-top:thin #c0c0c0 solid;
+	padding-top:4px;
+}
+
+/* Nav Below */
+#nav-below {
+	font-family: 'Roboto', serif;
+	color:#888;
+	margin:5px 0 10px 0;
+	font-size:0.9em;
+}
+#nav-below a {
+	color:#A6242F;
+}
+
+/* Footer */
+footer {
+	margin:60px 0 40px 0;
+}
+#copyright {
+	font-family: 'Roboto', serif;
+	color:#888;
+	margin:5px 0 10px 0;
+	font-size:0.9em;
+}
+#copyright a {
+	color:#888;
+}
+
+
