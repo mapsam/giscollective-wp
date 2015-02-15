@@ -342,36 +342,62 @@ button.nav-expand:focus {
 	display:none;
 }
 
+.archive-meta {
+	font-family: 'Roboto Slab', serif;
+	margin-bottom:15px;
+	font-size:0.8em;
+	text-transform:uppercase;
+}
+
 /* Sidebar Style */
 #site-description {
 	font-family: 'Roboto Slab', serif;
 	font-size:1.0em;
 	line-height:1.4em;
 	margin:0 0 17px 0;
-	color:#333;
+	color:#0367A6;
+	padding:10px;
+	border-bottom:3px solid #0367A6;
+	border-left:3px solid #0367A6;
 }
 .sid {}
 .sid li ul li {
 }
 .widget-container {
-	margin:0 0 40px 0;
+	margin:0 0 10px 0;
 	font-family: 'Roboto', serif;
+	background-color:#f6f6f6;
+}
+.widget-container:nth-child(1) {
+	border-left:3px solid #F2BC57;
+}
+.widget-container:nth-child(2) {
+	border-left:3px solid #71C6D9;
+}
+.widget-container:nth-child(3) {
+	border-left:3px solid #A6242F;
+}
+.widget-container:nth-child(4) {
+	border-left:3px solid #0367A6;
+}
+.widget-container:nth-child(5) {
+	border-left:3px solid #F2E6D8;
 }
 .widget-categories {}
 .widget-title {
+	padding:10px;
+	border-bottom:1px solid #e5e5e5;
 	margin:0 0 5px 0;
 	font-weight:700;
 }
-.cat-item a {
-	font-weight:600;
-	font-size:0.75em;
-	color:#A6242F;
+.widget-container ul {
+	padding:1px 10px 10px;
 }
 .widget-container ul li {
 	margin:0 0 2px 0;
 }
 .widget-container ul li a {
-	font-weight:600;
+	font-family: 'Roboto Slab', serif;
 	font-size:0.8em;
 	color:#A6242F;
 	opacity:0.7;
